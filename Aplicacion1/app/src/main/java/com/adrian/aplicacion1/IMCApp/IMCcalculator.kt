@@ -2,6 +2,7 @@ package com.adrian.aplicacion1.IMCApp
 
 import android.content.Intent
 import android.icu.text.DecimalFormat
+import android.icu.text.DecimalFormatSymbols
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -103,8 +104,11 @@ class IMCcalculator : AppCompatActivity() {
         startActivity(intent)
     }
     private fun calculateKcal():Double{
-        val df2 = DecimalFormat("#.##")
 
+        val dfs = DecimalFormatSymbols()
+        dfs.decimalSeparator = '.'
+        val df2 = DecimalFormat("#.##")
+        df2.decimalFormatSymbols = dfs
 
         val kcalBase: Double = if (genero == "hombre") {
             88.362 + (13.397 * currentWeight) + (4.799 * currentHeight) - (5.677 * currentAge
@@ -119,7 +123,10 @@ class IMCcalculator : AppCompatActivity() {
     }
 
     private fun calculateIMC(): Double {
+        val dfs = DecimalFormatSymbols()
+        dfs.decimalSeparator = '.'
         val df = DecimalFormat("#.##")
+        df.decimalFormatSymbols = dfs
         val imc = currentWeight / pow(currentHeight.toDouble() /100, 2.0)
 
         return df.format(imc).toDouble()
