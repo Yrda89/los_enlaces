@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.adrian.aplicacion1.BoardGamesApp.BoardGamesActivity
 import com.adrian.aplicacion1.IMCApp.IMCcalculator
 import com.adrian.aplicacion1.helloApp.MainActivity
 import com.adrian.aplicacion1.msgApp.EnviarMensaje
@@ -22,6 +23,9 @@ class MenuActivity : AppCompatActivity() {
 
         var btnImcApp = findViewById<Button>(R.id.imcApp)
         btnImcApp.setOnClickListener { navigateToImcApp() }
+
+        var btnBgApp = findViewById<Button>(R.id.BgApp)
+        btnBgApp.setOnClickListener { navigateToBoardGamesApp() }
     }
 
     private fun navigateToImcApp() {
@@ -38,5 +42,8 @@ class MenuActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-
+    private fun navigateToBoardGamesApp(){
+        var intent = Intent(this, BoardGamesActivity::class.java)
+        startActivity(intent)
+    }
 }
