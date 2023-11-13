@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.adrian.aplicacion1.BoardGamesApp.BoardGamesActivity
 import com.adrian.aplicacion1.IMCApp.IMCcalculator
+import com.adrian.aplicacion1.colores.coloresActivity
 import com.adrian.aplicacion1.helloApp.MainActivity
 import com.adrian.aplicacion1.msgApp.EnviarMensaje
 
@@ -26,6 +27,10 @@ class MenuActivity : AppCompatActivity() {
 
         var btnBgApp = findViewById<Button>(R.id.BgApp)
         btnBgApp.setOnClickListener { navigateToBoardGamesApp() }
+
+        var btnColorsApp = findViewById<Button>(R.id.ColorsApp)
+        btnColorsApp.setOnClickListener { navigateToColorsApp() }
+
     }
 
     private fun navigateToImcApp() {
@@ -46,4 +51,10 @@ class MenuActivity : AppCompatActivity() {
         var intent = Intent(this, BoardGamesActivity::class.java)
         startActivity(intent)
     }
+
+    private fun navigateToColorsApp() {
+        var intent = Intent(this, coloresActivity::class.java)
+        startActivity(intent)
+    }
+
 }

@@ -15,9 +15,6 @@ class GamesAdapter (var games: List<Game>, private val onItemSelected: (Int) -> 
 
     override fun onBindViewHolder(holder: GamesViewHolder, position: Int) {
         holder.render(games[position])
-        holder.itemView.setOnClickListener {
-            onItemSelected(position)
-        }
-
+        holder.itemView.setOnClickListener { onItemSelected(position) }
     }
 }

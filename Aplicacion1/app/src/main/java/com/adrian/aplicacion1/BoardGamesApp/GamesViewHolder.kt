@@ -16,6 +16,7 @@ class GamesViewHolder (view: View) : RecyclerView.ViewHolder(view){
 
 
     fun render(game: Game){
+
         if (game.isSelected) {
             tvGame.paintFlags = tvGame.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
         } else {

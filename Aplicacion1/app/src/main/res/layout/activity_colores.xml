@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".colores.coloresActivity">
+
+    <TextView
+        android:id="@+id/tvColores"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_500"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="PALETA DE COLORES"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFirst"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/tvColores"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="35dp"
+        android:backgroundTint="@color/cian_20"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="H1 (20%)"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSecond"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/verde_50"
+        app:layout_constraintTop_toBottomOf="@id/cvFirst"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="H2 (50%)"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvThird"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/azul_80"
+        app:layout_constraintTop_toBottomOf="@id/cvSecond"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="H3 (80%)"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvColores"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="35dp"
+    android:layout_marginRight="25dp"
+    app:layout_constraintTop_toBottomOf="@+id/tvColores"
+    app:layout_constraintStart_toStartOf="parent"
+/>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnCambioColor"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/purple_500"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="15dp"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAMBIAR COLOR"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

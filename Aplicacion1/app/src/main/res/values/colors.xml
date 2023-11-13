@@ -34,4 +34,62 @@
     <color name="bgapp_lcg_category">#4CAF50</color>
     <color name="bgapp_cooperative_category">#D016F1</color>
     <color name="bgapp_legacy_category">#EDF351</color>
+
+
+    <!--Aplicacion Mezcla de colores-->
+
+    <!--colores 20%-->
+    <color name="negro_20">#33111111</color>
+    <color name="blanco_20">#33FFFFFF</color>
+    <color name="rojo_20">#33FF0000</color>
+    <color name="naranja_20">#33FF9800</color>
+    <color name="amarillo_20">#33FDE403</color>
+    <color name="verde_20">#3300FF0A</color>
+    <color name="cian_20">#3303A9F4</color>
+    <color name="azul_20">#330027FF</color>
+    <color name="violeta_20">#33DA00FF</color>
+
+    <!--colores 35%-->
+    <color name="negro_35">#59111111</color>
+    <color name="blanco_35">#59FFFFFF</color>
+    <color name="rojo_35">#59FF0000</color>
+    <color name="naranja_35">#59FF9800</color>
+    <color name="amarillo_35">#59FDE403</color>
+    <color name="verde_35">#5900FF0A</color>
+    <color name="cian_35">#5903A9F4</color>
+    <color name="azul_35">#590027FF</color>
+    <color name="violeta_35">#59DA00FF</color>
+
+    <!--colores 50%-->
+    <color name="negro_50">#80111111</color>
+    <color name="blanco_50">#80FFFFFF</color>
+    <color name="rojo_50">#80FF0000</color>
+    <color name="naranja_50">#80FF9800</color>
+    <color name="amarillo_50">#80FDE403</color>
+    <color name="verde_50">#8000FF0A</color>
+    <color name="cian_50">#8003A9F4</color>
+    <color name="azul_50">#800027FF</color>
+    <color name="violeta_50">#80DA00FF</color>
+
+    <!--colores 65%-->
+    <color name="negro_65">#A6111111</color>
+    <color name="blanco_65">#A6FFFFFF</color>
+    <color name="rojo_65">#A6FF0000</color>
+    <color name="naranja_65">#A6FF9800</color>
+    <color name="amarillo_65">#A6FDE403</color>
+    <color name="verde_65">#A600FF0A</color>
+    <color name="cian_65">#A603A9F4</color>
+    <color name="azul_65">#A60027FF</color>
+    <color name="violeta_65">#A6DA00FF</color>
+
+    <!--colores 80%-->
+    <color name="negro_80">#CC111111</color>
+    <color name="blanco_80">#CCFFFFFF</color>
+    <color name="rojo_80">#CCFF0000</color>
+    <color name="naranja_80">#CCFF9800</color>
+    <color name="amarillo_80">#CCFDE403</color>
+    <color name="verde_80">#CC00FF0A</color>
+    <color name="cian_80">#CC03A9F4</color>
+    <color name="azul_80">#CC0027FF</color>
+    <color name="violeta_80">#CCDA00FF</color>
 </resources>

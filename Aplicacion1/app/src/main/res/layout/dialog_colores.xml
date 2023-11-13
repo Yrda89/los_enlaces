@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/bgapp_background_app"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvBarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige una barra"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige una barra"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgBarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvBarra"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbH1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_20"
+            android:checked="true"
+            android:text="H1 (20%)"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbH2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_50"
+            android:text="H2 (50%)"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_80"
+            android:text="H3 (80%)"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_20"
+            android:text="V1 (20%)"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_35"
+            android:text="V2 (35%)"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbV3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_50"
+            android:text="V3 (50%)"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbV4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_65"
+            android:text="V4 (65%)"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbV5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_80"
+            android:text="V5 (80%)"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgColores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvColor"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbBlanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/blanco_80"
+            android:checked="true"
+            android:text="Blanco"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbRojo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/rojo_80"
+            android:text="Rojo"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbNaranja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/naranja_80"
+            android:text="Naranja"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbAmarillo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/amarillo_80"
+            android:text="Amarillo"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/verde_80"
+            android:text="Verde"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbCian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/cian_80"
+            android:text="Cian"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbAzul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/azul_80"
+            android:text="Azul"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbVioleta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/violeta_80"
+            android:text="Violeta"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbNegro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/negro_80"
+            android:text="Negro"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnAplicarColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicar color"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/rgColores"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
