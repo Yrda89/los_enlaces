@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.adrian.aplicacion1.BoardGamesApp.BoardGamesActivity
 import com.adrian.aplicacion1.IMCApp.IMCcalculator
+import com.adrian.aplicacion1.SuperheroApp.SuperheroListActivity
 import com.adrian.aplicacion1.colores.coloresActivity
 import com.adrian.aplicacion1.helloApp.MainActivity
 import com.adrian.aplicacion1.msgApp.EnviarMensaje
@@ -31,7 +32,12 @@ class MenuActivity : AppCompatActivity() {
         var btnColorsApp = findViewById<Button>(R.id.ColorsApp)
         btnColorsApp.setOnClickListener { navigateToColorsApp() }
 
+        var btnSuperheroApp = findViewById<Button>(R.id.SuperheroApp)
+        btnSuperheroApp.setOnClickListener { navigateToSuperheroApp() }
+
     }
+
+
 
     private fun navigateToImcApp() {
         var intent = Intent(this, IMCcalculator::class.java)
@@ -57,4 +63,8 @@ class MenuActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    private fun navigateToSuperheroApp() {
+        var intent = Intent(this, SuperheroListActivity::class.java)
+        startActivity(intent)
+    }
 }
