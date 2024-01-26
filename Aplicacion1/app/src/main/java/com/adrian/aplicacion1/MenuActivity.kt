@@ -6,7 +6,10 @@ import android.os.Bundle
 import android.widget.Button
 import com.adrian.aplicacion1.BoardGamesApp.BoardGamesActivity
 import com.adrian.aplicacion1.IMCApp.IMCcalculator
+import com.adrian.aplicacion1.PokeApi.PokeApiActivity
+import com.adrian.aplicacion1.Settings.SettingsActivity
 import com.adrian.aplicacion1.SuperheroApp.SuperheroListActivity
+import com.adrian.aplicacion1.VideoGamesApp.VideoGamesActivity
 import com.adrian.aplicacion1.colores.coloresActivity
 import com.adrian.aplicacion1.helloApp.MainActivity
 import com.adrian.aplicacion1.msgApp.EnviarMensaje
@@ -35,6 +38,14 @@ class MenuActivity : AppCompatActivity() {
         var btnSuperheroApp = findViewById<Button>(R.id.SuperheroApp)
         btnSuperheroApp.setOnClickListener { navigateToSuperheroApp() }
 
+        var btnPokeApi = findViewById<Button>(R.id.PokeApi)
+        btnPokeApi.setOnClickListener{ navigateToPokeApi() }
+
+        var btnVideoGames = findViewById<Button>(R.id.VideoGamesApp)
+        btnVideoGames.setOnClickListener{ navigateToVideoGamesApp() }
+
+        var btnSettings = findViewById<Button>(R.id.Settings)
+        btnSettings.setOnClickListener{ navigateToSettings() }
     }
 
 
@@ -67,4 +78,22 @@ class MenuActivity : AppCompatActivity() {
         var intent = Intent(this, SuperheroListActivity::class.java)
         startActivity(intent)
     }
+
+    private fun navigateToPokeApi() {
+        var intent = Intent(this, PokeApiActivity::class.java)
+        startActivity(intent)
+
+    }
+
+    private fun navigateToVideoGamesApp() {
+        var intent = Intent(this, VideoGamesActivity::class.java)
+        startActivity(intent)
+
+    }
+    private fun navigateToSettings() {
+        var intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
+
+    }
+
 }
