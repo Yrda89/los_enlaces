@@ -78,18 +78,6 @@
         />
 
     <Button
-        android:id="@+id/PokeApi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PokeApi"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        />
-
-
-    <Button
         android:id="@+id/VideoGamesApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
